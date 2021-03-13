@@ -12366,14 +12366,6 @@ W = angled&lt;p&gt;
 <wire x1="62.484" y1="0.254" x2="64.008" y2="0.254" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DOWN" class="0">
-<segment>
-<pinref part="NANO" gate="G$1" pin="D6"/>
-<wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="7"/>
-<label x="98.044" y="71.628" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RIGHT" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D7"/>
@@ -12577,6 +12569,12 @@ W = angled&lt;p&gt;
 <pinref part="J1" gate="G$1" pin="6"/>
 <wire x1="270.764" y1="3.048" x2="263.144" y2="3.048" width="0.1524" layer="91"/>
 <label x="263.144" y="3.048" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="NANO" gate="G$1" pin="D6"/>
+<wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="7"/>
+<label x="98.044" y="71.628" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">

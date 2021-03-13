@@ -12400,11 +12400,11 @@ Updated by Yingchun,Shan 2019-10-29
 <label x="283.464" y="3.048" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RIGHT" class="0">
+<net name="RIGHT(NA)" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="270.764" y1="-2.032" x2="263.144" y2="-2.032" width="0.1524" layer="91"/>
-<label x="263.144" y="-2.032" size="1.778" layer="95"/>
+<label x="258.064" y="-2.032" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BACK" class="0">
@@ -12428,11 +12428,11 @@ Updated by Yingchun,Shan 2019-10-29
 <label x="283.464" y="0.508" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DOWN" class="0">
+<net name="DOWN(NA)" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="270.764" y1="0.508" x2="263.144" y2="0.508" width="0.1524" layer="91"/>
-<label x="263.144" y="0.508" size="1.778" layer="95"/>
+<label x="258.064" y="0.508" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOUND_A0" class="0">
