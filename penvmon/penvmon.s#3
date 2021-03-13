@@ -12329,11 +12329,6 @@ W = angled&lt;p&gt;
 <label x="224.79" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_DISP" gate="G$1" pin="4"/>
-<wire x1="226.06" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
-<label x="231.14" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="DHT11" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="231.14" y="73.66" size="1.778" layer="95"/>
@@ -12349,13 +12344,10 @@ W = angled&lt;p&gt;
 <wire x1="230.632" y1="27.432" x2="245.872" y2="27.432" width="0.1524" layer="91"/>
 <label x="233.172" y="27.432" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="D3" class="0">
 <segment>
-<pinref part="NANO" gate="G$1" pin="D3"/>
-<wire x1="105.664" y1="79.248" x2="91.186" y2="79.248" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="10"/>
-<label x="97.79" y="79.248" size="1.778" layer="95"/>
+<pinref part="I2C_DISP" gate="G$1" pin="3"/>
+<wire x1="226.06" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+<label x="231.14" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -12372,14 +12364,6 @@ W = angled&lt;p&gt;
 <wire x1="105.664" y1="61.468" x2="91.186" y2="61.468" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
 <label x="98.044" y="61.722" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D5" class="0">
-<segment>
-<pinref part="NANO" gate="G$1" pin="D5"/>
-<wire x1="105.664" y1="74.168" x2="91.186" y2="74.168" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="8"/>
-<label x="98.044" y="74.168" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXNANO" class="0">
@@ -12463,7 +12447,7 @@ W = angled&lt;p&gt;
 <wire x1="62.484" y1="0.254" x2="64.008" y2="0.254" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D6" class="0">
+<net name="DOWN" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D6"/>
 <wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
@@ -12471,12 +12455,17 @@ W = angled&lt;p&gt;
 <label x="98.044" y="71.628" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D7" class="0">
+<net name="RIGHT" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D7"/>
 <wire x1="105.664" y1="69.088" x2="91.186" y2="69.088" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="6"/>
 <label x="98.552" y="69.088" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="270.764" y1="-2.032" x2="263.144" y2="-2.032" width="0.1524" layer="91"/>
+<label x="258.064" y="-2.032" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -12543,14 +12532,6 @@ W = angled&lt;p&gt;
 <label x="149.098" y="71.628" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D4" class="0">
-<segment>
-<pinref part="NANO" gate="G$1" pin="D4"/>
-<wire x1="105.664" y1="76.708" x2="91.186" y2="76.708" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="9"/>
-<label x="98.552" y="76.708" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="D11" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D11"/>
@@ -12596,11 +12577,6 @@ W = angled&lt;p&gt;
 <label x="227.33" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="I2C_DISP" gate="G$1" pin="3"/>
-<wire x1="226.06" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
-<label x="231.14" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="DHT11" gate="G$1" pin="4"/>
 <wire x1="226.06" y1="81.28" x2="238.76" y2="81.28" width="0.1524" layer="91"/>
 <label x="231.14" y="81.28" size="1.778" layer="95"/>
@@ -12615,6 +12591,11 @@ W = angled&lt;p&gt;
 <pinref part="MPU6050" gate="G$1" pin="8"/>
 <wire x1="230.632" y1="29.972" x2="245.872" y2="29.972" width="0.1524" layer="91"/>
 <label x="233.172" y="29.972" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_DISP" gate="G$1" pin="4"/>
+<wire x1="226.06" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
+<label x="231.14" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -12658,6 +12639,12 @@ W = angled&lt;p&gt;
 <wire x1="280.924" y1="5.588" x2="286.004" y2="5.588" width="0.1524" layer="91"/>
 <label x="283.464" y="5.588" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="NANO" gate="G$1" pin="D5"/>
+<wire x1="105.664" y1="74.168" x2="91.186" y2="74.168" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="8"/>
+<label x="98.044" y="74.168" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEFT" class="0">
 <segment>
@@ -12665,12 +12652,11 @@ W = angled&lt;p&gt;
 <wire x1="280.924" y1="3.048" x2="286.004" y2="3.048" width="0.1524" layer="91"/>
 <label x="283.464" y="3.048" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="RIGHT(NA)" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="270.764" y1="-2.032" x2="263.144" y2="-2.032" width="0.1524" layer="91"/>
-<label x="258.064" y="-2.032" size="1.778" layer="95"/>
+<pinref part="NANO" gate="G$1" pin="D4"/>
+<wire x1="105.664" y1="76.708" x2="91.186" y2="76.708" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="9"/>
+<label x="98.552" y="76.708" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BACK" class="0">
@@ -12687,7 +12673,7 @@ W = angled&lt;p&gt;
 <wire x1="280.924" y1="-2.032" x2="288.544" y2="-2.032" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="UP" class="0">
+<net name="UP(NA)" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="280.924" y1="0.508" x2="286.004" y2="0.508" width="0.1524" layer="91"/>
@@ -12714,13 +12700,14 @@ W = angled&lt;p&gt;
 <wire x1="224.79" y1="111.76" x2="240.03" y2="111.76" width="0.1524" layer="91"/>
 <label x="227.33" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="NANO" gate="G$1" pin="D3"/>
+<wire x1="105.664" y1="79.248" x2="91.186" y2="79.248" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="10"/>
+<label x="97.79" y="79.248" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="I2C_DISP" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
-<label x="231.14" y="93.98" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="NANO" gate="G$1" pin="A4"/>
 <wire x1="146.304" y1="74.168" x2="163.576" y2="74.168" width="0.1524" layer="91"/>
@@ -12732,13 +12719,13 @@ W = angled&lt;p&gt;
 <wire x1="230.632" y1="22.352" x2="245.872" y2="22.352" width="0.1524" layer="91"/>
 <label x="233.172" y="22.352" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SCL" class="0">
 <segment>
 <pinref part="I2C_DISP" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
 <label x="231.14" y="91.44" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="SCL" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="A5"/>
 <wire x1="163.576" y1="76.708" x2="146.304" y2="76.708" width="0.1524" layer="91"/>
@@ -12749,6 +12736,11 @@ W = angled&lt;p&gt;
 <pinref part="MPU6050" gate="G$1" pin="6"/>
 <wire x1="230.632" y1="24.892" x2="245.872" y2="24.892" width="0.1524" layer="91"/>
 <label x="233.172" y="24.892" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="I2C_DISP" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
+<label x="231.14" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DHT" class="0">

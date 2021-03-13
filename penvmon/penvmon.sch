@@ -11606,41 +11606,12 @@ Updated by Yingchun,Shan 2019-10-29
 <rectangle x1="0.9652" y1="-0.3048" x2="1.5748" y2="0.3048" layer="51"/>
 <rectangle x1="3.5052" y1="-0.3048" x2="4.1148" y2="0.3048" layer="51"/>
 </package>
-<package name="JP1" urn="urn:adsk.eagle:footprint:15398/1" library_version="2">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
-<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
-<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
-<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
-</package>
 </packages>
 <packages3d>
 <package3d name="JP4" urn="urn:adsk.eagle:package:15463/1" type="box" library_version="2">
 <description>JUMPER</description>
 <packageinstances>
 <packageinstance name="JP4"/>
-</packageinstances>
-</package3d>
-<package3d name="JP1" urn="urn:adsk.eagle:package:15455/1" type="box" library_version="2">
-<description>JUMPER</description>
-<packageinstances>
-<packageinstance name="JP1"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -11666,20 +11637,6 @@ Updated by Yingchun,Shan 2019-10-29
 <pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
-<symbol name="JP2E" urn="urn:adsk.eagle:symbol:15391/1" library_version="2">
-<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JP4E" urn="urn:adsk.eagle:component:15497/2" prefix="JP" uservalue="yes" library_version="2">
@@ -11701,28 +11658,6 @@ Updated by Yingchun,Shan 2019-10-29
 <technologies>
 <technology name="">
 <attribute name="POPULARITY" value="15" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JP1E" urn="urn:adsk.eagle:component:15487/2" prefix="JP" uservalue="yes" library_version="2">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="JP2E" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="JP1">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15455/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="61" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12170,8 +12105,6 @@ W = angled&lt;p&gt;
 <part name="SOUND_IN" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4E" device="" package3d_urn="urn:adsk.eagle:package:15463/1"/>
 <part name="I2C_DISP" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4E" device="" package3d_urn="urn:adsk.eagle:package:15463/1"/>
 <part name="DHT11" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP4E" device="" package3d_urn="urn:adsk.eagle:package:15463/1"/>
-<part name="LDR" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="M0805" package3d_urn="urn:adsk.eagle:package:6240587/1" value="10k"/>
-<part name="JP3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="MPU6050" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE08-1" device="" package3d_urn="urn:adsk.eagle:package:8194/1"/>
 </parts>
 <sheets>
@@ -12254,14 +12187,6 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="223.52" y="72.39" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="223.52" y="84.455" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LDR" gate="G$1" x="222.758" y="51.308" smashed="yes" rot="R270">
-<attribute name="NAME" x="224.2566" y="55.118" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="219.456" y="55.118" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="JP3" gate="A" x="226.06" y="60.96" smashed="yes" rot="R270">
-<attribute name="NAME" x="226.06" y="62.23" size="1.778" layer="95"/>
-<attribute name="VALUE" x="226.06" y="55.245" size="1.778" layer="96"/>
-</instance>
 <instance part="MPU6050" gate="G$1" x="223.012" y="19.812" smashed="yes">
 <attribute name="VALUE" x="221.742" y="7.112" size="1.778" layer="96"/>
 <attribute name="NAME" x="221.742" y="33.274" size="1.778" layer="95"/>
@@ -12332,12 +12257,6 @@ W = angled&lt;p&gt;
 <pinref part="DHT11" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="73.66" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="231.14" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LDR" gate="G$1" pin="2"/>
-<wire x1="222.758" y1="46.228" x2="222.758" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="222.758" y1="43.18" x2="223.52" y2="43.18" width="0.1524" layer="91"/>
-<label x="223.52" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MPU6050" gate="G$1" pin="7"/>
@@ -12445,14 +12364,6 @@ W = angled&lt;p&gt;
 <pinref part="NODEMCU" gate="G$1" pin="1"/>
 <wire x1="62.484" y1="9.652" x2="62.484" y2="0.254" width="0.1524" layer="91"/>
 <wire x1="62.484" y1="0.254" x2="64.008" y2="0.254" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="DOWN" class="0">
-<segment>
-<pinref part="NANO" gate="G$1" pin="D6"/>
-<wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="7"/>
-<label x="98.044" y="71.628" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RIGHT" class="0">
@@ -12582,12 +12493,6 @@ W = angled&lt;p&gt;
 <label x="231.14" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
-<wire x1="223.52" y1="60.96" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="60.96" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
-<label x="215.9" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MPU6050" gate="G$1" pin="8"/>
 <wire x1="230.632" y1="29.972" x2="245.872" y2="29.972" width="0.1524" layer="91"/>
 <label x="233.172" y="29.972" size="1.778" layer="95"/>
@@ -12635,15 +12540,15 @@ W = angled&lt;p&gt;
 </net>
 <net name="OK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="280.924" y1="5.588" x2="286.004" y2="5.588" width="0.1524" layer="91"/>
-<label x="283.464" y="5.588" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="NANO" gate="G$1" pin="D5"/>
 <wire x1="105.664" y1="74.168" x2="91.186" y2="74.168" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="8"/>
 <label x="98.044" y="74.168" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="270.764" y1="3.048" x2="263.144" y2="3.048" width="0.1524" layer="91"/>
+<label x="263.144" y="3.048" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEFT" class="0">
@@ -12661,9 +12566,15 @@ W = angled&lt;p&gt;
 </net>
 <net name="BACK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="270.764" y1="3.048" x2="263.144" y2="3.048" width="0.1524" layer="91"/>
-<label x="263.144" y="3.048" size="1.778" layer="95"/>
+<pinref part="NANO" gate="G$1" pin="D6"/>
+<wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="7"/>
+<label x="98.044" y="71.628" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="270.764" y1="0.508" x2="263.144" y2="0.508" width="0.1524" layer="91"/>
+<label x="258.064" y="0.508" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -12682,9 +12593,9 @@ W = angled&lt;p&gt;
 </net>
 <net name="DOWN(NA)" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="270.764" y1="0.508" x2="263.144" y2="0.508" width="0.1524" layer="91"/>
-<label x="258.064" y="0.508" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="280.924" y1="5.588" x2="286.004" y2="5.588" width="0.1524" layer="91"/>
+<label x="283.464" y="5.588" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOUND_A0" class="0">
@@ -12763,16 +12674,7 @@ W = angled&lt;p&gt;
 <label x="231.14" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LDR_SIG" class="0">
-<segment>
-<pinref part="JP3" gate="A" pin="2"/>
-<pinref part="LDR" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="58.42" x2="222.758" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="222.758" y1="58.42" x2="222.758" y2="56.388" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
-<junction x="223.52" y="58.42"/>
-<label x="213.36" y="58.42" size="1.778" layer="95"/>
-</segment>
+<net name="12" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="A0"/>
 <wire x1="146.304" y1="64.008" x2="163.576" y2="64.008" width="0.1524" layer="91"/>
