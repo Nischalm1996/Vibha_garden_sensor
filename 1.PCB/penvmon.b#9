@@ -1472,27 +1472,6 @@ design rules under a new name.</description>
 <wire x1="86.4997" y1="55.753" x2="87.8967" y2="55.753" width="0.635" layer="16"/>
 <wire x1="87.8967" y1="55.753" x2="90.043" y2="53.6067" width="0.635" layer="16"/>
 <wire x1="90.043" y1="53.6067" x2="90.043" y2="14.8463" width="0.635" layer="16"/>
-<polygon width="0.635" layer="16">
-<vertex x="0.9652" y="3.8862"/>
-<vertex x="3.683" y="1.1684"/>
-<vertex x="6.7818" y="1.1684"/>
-<vertex x="87.249" y="1.1684"/>
-<vertex x="87.4395" y="1.3589"/>
-<vertex x="91.313" y="5.2324"/>
-<vertex x="91.313" y="6.7945"/>
-<vertex x="91.313" y="96.0882"/>
-<vertex x="88.4047" y="98.9965"/>
-<vertex x="88.5952" y="98.806"/>
-<vertex x="88.6079" y="98.806"/>
-<vertex x="88.2269" y="99.187"/>
-<vertex x="83.3628" y="99.187"/>
-<vertex x="4.064" y="99.187"/>
-<vertex x="3.8735" y="98.9965"/>
-<vertex x="1.1684" y="96.2914"/>
-<vertex x="1.1684" y="93.7514"/>
-<vertex x="1.1684" y="4.2672"/>
-<vertex x="1.1684" y="3.9624"/>
-</polygon>
 </signal>
 <signal name="SCK">
 <contactref element="NANO" pad="16"/>
