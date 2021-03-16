@@ -12540,15 +12540,15 @@ W = angled&lt;p&gt;
 </net>
 <net name="OK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="280.924" y1="5.588" x2="286.004" y2="5.588" width="0.1524" layer="91"/>
-<label x="283.464" y="5.588" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="NANO" gate="G$1" pin="D5"/>
 <wire x1="105.664" y1="74.168" x2="91.186" y2="74.168" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="8"/>
 <label x="98.044" y="74.168" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="270.764" y1="3.048" x2="263.144" y2="3.048" width="0.1524" layer="91"/>
+<label x="263.144" y="3.048" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LEFT" class="0">
@@ -12566,15 +12566,15 @@ W = angled&lt;p&gt;
 </net>
 <net name="BACK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="6"/>
-<wire x1="270.764" y1="3.048" x2="263.144" y2="3.048" width="0.1524" layer="91"/>
-<label x="263.144" y="3.048" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="NANO" gate="G$1" pin="D6"/>
 <wire x1="105.664" y1="71.628" x2="91.186" y2="71.628" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="7"/>
 <label x="98.044" y="71.628" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="270.764" y1="0.508" x2="263.144" y2="0.508" width="0.1524" layer="91"/>
+<label x="258.064" y="0.508" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -12593,9 +12593,9 @@ W = angled&lt;p&gt;
 </net>
 <net name="DOWN(NA)" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="270.764" y1="0.508" x2="263.144" y2="0.508" width="0.1524" layer="91"/>
-<label x="258.064" y="0.508" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="280.924" y1="5.588" x2="286.004" y2="5.588" width="0.1524" layer="91"/>
+<label x="283.464" y="5.588" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOUND_A0" class="0">
