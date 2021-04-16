@@ -1,7 +1,10 @@
-/* program for soil moisture sensor.
+/* program for dht11 sensor.
 1. begin()  initialise variables
-2. int getRawReading()
-3. float getMoisturePercentage()*/
+2. float readHumidity()
+3. float readTemperature()
+4. float readTemperatureFah()
+5. float heatIndexFah()
+6. float heatIndexCel()*/
 
 #ifndef _dht11_H
 #define _dht11_H
