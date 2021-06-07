@@ -60,7 +60,7 @@ LiquidMenu menu(lcd);
 
 void setup() {
   // put your setup code here, to run once:
- // Serial.begin(9600);
+  // Serial.begin(9600);
   angle.begin();
   temper.begin();
   lcd.init();
@@ -87,7 +87,7 @@ void loop() {
   // Check all the buttons
   if (right.check() == LOW)
   {
-   // Serial.println(F("RIGHT button pressed"));
+    // Serial.println(F("RIGHT button pressed"));
     menu.next_screen();
   }
   if (left.check() == LOW)
