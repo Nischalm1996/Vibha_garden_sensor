@@ -1,27 +1,35 @@
+
 #include "Arduino.h"
 #include "dht11.h"
 #include "sound.h"
 #include "soilMoisture.h"
-#include "mpu.h"
+//#include "mpu.h"
 #include "Button.h"
+#include <Wire.h>
+// The I2C LCD library
 #include <LiquidMenu.h>
+
 #include <LiquidCrystal_I2C.h>
-//push
+// The menu wrapper library
+// The I2C LCD object
+
+
 //OK  D5
 //LEFT  D7
 //RIGHT D4
 
 const bool pullup = false;
-
 Button left(7, pullup);
 Button right(4, pullup);
+//Button up(8, pullup);
+//Button down(9, pullup);
 Button enter(5, pullup);
 
 
 dhtClass temper;
 sound Noise;
 soilMoisture moisture;
-mpuClass angle;
+//mpuClass angle;
 
 struct allValues {
   float temp_cel;
@@ -34,7 +42,6 @@ struct allValues {
   int gyroz;
 };
 allValues toEsp = {temp, fahren, 0, 0, 0, 0, 0, 0};
-
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 LiquidLine welcome_line1(1, 0, "Environment");
 LiquidLine welcome_line2(1, 1, "Monitor System");
@@ -52,8 +59,10 @@ LiquidScreen screen3(gyrox, gyroy);
 LiquidMenu menu(lcd);
 
 void setup() {
-  Serial.begin(9600);
-
+  // put your setup code here, to run once:
+ // Serial.begin(9600);
+  //angle.begin();
+  temper.begin();
   lcd.init();
   lcd.backlight();
   delay(500);
@@ -68,17 +77,17 @@ void setup() {
   menu.add_screen(Screen2);
   menu.add_screen(screen3);
   menu.update();
-  angle.begin();
-  temper.begin();
   delay(500);
   menu.next_screen();
-  //Serial.println("Setup done");
+  menu.update();
 }
-unsigned int count = 0;
+int count = 0;
 void loop() {
+  // put your main code here, to run repeatedly:
+  // Check all the buttons
   if (right.check() == LOW)
   {
-    // Serial.println(F("RIGHT button pressed"));
+   // Serial.println(F("RIGHT button pressed"));
     menu.next_screen();
   }
   if (left.check() == LOW)
@@ -89,9 +98,12 @@ void loop() {
   if (enter.check() == LOW)
   {
     //Serial.println(F("ENTER button pressed"));
+    // Switches focus to the next line.
     menu.switch_focus();
   }
-  toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
+
+
+  toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), 0, 0, 0};
   //  Serial.print("celcius: "); Serial.print(toEsp.temp_cel); Serial.print(' ');
   //  Serial.print("Fahreheit: "); Serial.print(toEsp.temp_fah); Serial.print(' ');
   //  Serial.print("Humid: "); Serial.print(toEsp.humid); Serial.println("");
@@ -104,14 +116,14 @@ void loop() {
 
 
   count = count + 1;
-  //Serial.print(".");
+
   if (count >= 1000) {
     temper.updateTemp();
-    angle.updateAngles();
-    toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
-    Serial.println("update");
+    //angle.update//angles();
+    toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), 0, 0, 0};
+
     menu.update();
-    count = 0;
+    count=0;
   }
 
 }
