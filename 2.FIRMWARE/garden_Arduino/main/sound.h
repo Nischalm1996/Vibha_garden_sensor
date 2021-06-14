@@ -21,7 +21,7 @@ class sound
     }
     float getNoisePercentage()
     {
-      //return(map(getReading(),lowNoiseThreshold,highNoiseThreshold,0,100));
+      return(map(getReading(),lowNoiseThreshold,highNoiseThreshold,0,100));
       return(getReading());
     }
 };
