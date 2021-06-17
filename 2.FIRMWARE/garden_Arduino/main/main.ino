@@ -102,15 +102,32 @@ void loop() {
   //  Serial.print("sound: "); Serial.println(toEsp.sound);
   //  delay(50);
 
-
+  while (Serial.available() > 0)
+  {
+    char c = Serial.read();
+    if (c == '*')
+    {
+      toEsp = {temp, fahren, humid, moisture.getMoisturePercentage(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
+      Serial.print("S"); Serial.print(toEsp.temp_cel); Serial.print("A");
+      Serial.print(toEsp.humid); Serial.print("B");
+      Serial.print(toEsp.soil_moisture); Serial.print("C");
+      Serial.print(toEsp.sound); Serial.print("D");
+      Serial.print(toEsp.gyrox); Serial.print("E");
+      Serial.print(toEsp.gyroy); Serial.println("F"); Serial.print("\n");
+    }
+  }
   count = count + 1;
   //Serial.print(".");
   if (count >= 1000) {
     temper.updateTemp();
     angle.updateAngles();
-    toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
-    Serial.println("update");
+    toEsp = {temp, fahren, humid, moisture.getMoisturePercentage(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
+    //Serial.println("update");
     menu.update();
+
+
+
+
     count = 0;
   }
 

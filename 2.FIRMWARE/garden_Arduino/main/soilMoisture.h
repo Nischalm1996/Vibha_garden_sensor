@@ -19,7 +19,7 @@ class soilMoisture
     {
         return(analogRead(soilSensorPin));
     }
-    float getMoisturePercentage()
+    int getMoisturePercentage()
     {
       return(map(getRawReading(),lowThreshold,highThreshold,100,0));
     }
