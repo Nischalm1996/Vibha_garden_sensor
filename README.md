@@ -26,8 +26,8 @@
 - NAVIGATION MODULE
 - DISPLAY I2C 16*2
 
-THINGS SPEAK DETAILS
-GMAIL DETAILS
+###THINGS SPEAK DETAILS
+####GMAIL DETAILS
 ID- portableevironment@gmail.com
 Password- EnvironmentPort@1
 https://thingspeak.com/channels/1418539/private_show
