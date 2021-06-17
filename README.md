@@ -1,6 +1,6 @@
 # Vibha_garden_sensor
 
-## BASE STATION
+## GARDEN STATION
 | NAME     | Pin |
 |----------|-----|
 | SDA      | A4  |
@@ -10,11 +10,10 @@
 | LEFT     | D4  |
 | RIGHT    | D7  |
 | BACK     | D6  |
-| SOUND    | D3  |
+| SOUND    | A3  |
 | DHT11    | D2  |
 | TX       | D0  |
 | RX       | D1  |
-| SCK      | D13 |
 
 
 ### MODULES USED
@@ -27,6 +26,8 @@
 - NAVIGATION MODULE
 - DISPLAY I2C 16*2
 
-
-
-3rd April Vibha Project will be done!: hemanth
+THINGS SPEAK DETAILS
+GMAIL DETAILS
+ID- portableevironment@gmail.com
+Password- EnvironmentPort@1
+https://thingspeak.com/channels/1418539/private_show
