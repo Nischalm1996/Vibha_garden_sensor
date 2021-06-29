@@ -91,7 +91,7 @@ void loop() {
     //Serial.println(F("ENTER button pressed"));
     menu.switch_focus();
   }
-  toEsp = {temp, fahren, humid, moisture.getRawReading(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
+  toEsp = {temp, fahren, humid, moisture.getMoisturePercentage(), Noise.getNoisePercentage(), xaxis, yaxis, zaxis};
   //  Serial.print("celcius: "); Serial.print(toEsp.temp_cel); Serial.print(' ');
   //  Serial.print("Fahreheit: "); Serial.print(toEsp.temp_fah); Serial.print(' ');
   //  Serial.print("Humid: "); Serial.print(toEsp.humid); Serial.println("");

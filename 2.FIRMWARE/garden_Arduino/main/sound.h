@@ -9,7 +9,7 @@
 
 
 const int soundSensorPin = A3;
-const int lowNoiseThreshold = 0;
+const int lowNoiseThreshold = 400;
 const int highNoiseThreshold = 1023;
 
 class sound
@@ -21,7 +21,7 @@ class sound
     }
     float getNoisePercentage()
     {
-      return(map(getReading(),lowNoiseThreshold,highNoiseThreshold,0,100));
+      return(map(getReading(),lowNoiseThreshold,highNoiseThreshold,100,0));
       return(getReading());
     }
 };
