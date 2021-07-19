@@ -29,31 +29,33 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   WiFi.mode(WIFI_STA);
-  ThingSpeak.begin(client);
+  WiFi.begin(ssid, pass);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+    ThingSpeak.begin(client);
 
 }
 unsigned long time_now;
 void loop() {
   // put your main code here, to run repeatedly:
-  if (WiFi.status() != WL_CONNECTED) {
-    Serial.print("Attempting to connect to SSID: ");
-    Serial.println(SECRET_SSID);
-    while (WiFi.status() != WL_CONNECTED) {
-      WiFi.begin(ssid, pass);  // Connect to WPA/WPA2 network. Change this line if using open or WEP network
-      Serial.print(".");
-      delay(3000);
-    }
-    Serial.println("\nConnected.");
-    time_now  = millis();
+  
 
-  }
-
-  delay(10);
   if (millis() < (time_now + 20000)) {
     flag = 0;
+
   }
   else {
     flag = 1;
+    time_now  = millis();
+
     //Serial.print(".");
   }
   if (flag == 1)
@@ -66,9 +68,6 @@ void loop() {
     flag = 0;
     time_now = millis();
   }
-
-
-
 }
 //////////////////////////////////////////////////////////////////////////////////
 void parse_the_data()
@@ -113,12 +112,12 @@ void readSerialData()
   }
   c = 0;
   dataIn = "";
-//  Serial.println("temp_cel=" + temp_cel);
-//  Serial.println("humidity=" + humid);
-//  Serial.println("Soil Moisture=" + soil_moisture);
-//  Serial.println("Noise=" + _noise);
-//  Serial.println("Gyro x axis=" + gyrox);
-//  Serial.println("Gyro y axis=" + gyroy);
+  //  Serial.println("temp_cel=" + temp_cel);
+  //  Serial.println("humidity=" + humid);
+  //  Serial.println("Soil Moisture=" + soil_moisture);
+  //  Serial.println("Noise=" + _noise);
+  //  Serial.println("Gyro x axis=" + gyrox);
+  //  Serial.println("Gyro y axis=" + gyroy);
 }
 
 void sendToThingsSpeak()
